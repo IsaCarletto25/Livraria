@@ -65,26 +65,38 @@
         <!-- Slider main container -->
         <div class="swiper">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
-            </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/capa de A vida invisível de Addie Larue_adobe_express.svg" alt="A Vida Invisível de Addie Larue"></div>
+                <div class="swiper-slide"><img src="img/box-trilogia-verao_adobe_express.svg" alt="Triologia Verão"></div>
+                <div class="swiper-slide"><img src="img/capa de Anne de Green Gables_adobe_express.svg" alt="Anne de Green Gables"></div>
+                <div class="swiper-slide"><img src="img/capa de A Seleção_adobe_express.svg" alt="A Seleção"></div>
+                <div class="swiper-slide"><img src="img/Capa de Orgulho e Preconceito_adobe_express.svg" alt="Orgulho e Preconceito"></div>
+                <div class="swiper-slide"><img src="img/capa de Os sete maridos de Evelin Hugo_adobe_express.svg" alt="Os Sete Maridos de Evelyn Hugo"></div>
+            </div>
+            
         
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
     </section>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+        });
+    </script>
 </body>
 
 </html>
