@@ -9,6 +9,7 @@
     --verde-degrade: linear-gradient(97.54deg, #053731 35.49%, #0e796c 165.37%);
     --cinza-claro: #adadad;
     --fonte-principal: "Poppins";
+    --verde-escuro: #074139;
 }
 
 body {
