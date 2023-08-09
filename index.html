@@ -19,14 +19,11 @@
     <header class="cabeçalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" class="container__rótulo">
                 <span class="cabeçalho__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Programação</a>
-                </li>
                 <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">Romance</a>
                 </li>
@@ -55,14 +52,11 @@
 
         <ul class="opções">
             <input type="checkbox" id="opções-menu" class="opções__botão">
-            <label for="opções-menu">
+            <label for="opções-menu" class="opções__rótulo">
                 <li class="opções__item">Categorias</li>
             </label>
 
             <ul class="lista-menu">
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Programação</a>
-                </li>
                 <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">Romance</a>
                 </li>
@@ -80,9 +74,6 @@
                 </li>
                 <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">distopia</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">artigos científicos</a>
                 </li>
             </ul>
 
@@ -111,59 +102,61 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">Os mais amados</h2>  
         <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="img/capa de A vida invisível de Addie Larue_adobe_express.svg" 
-                    alt="A Vida Invisível de Addie Larue"></div>
-                <div class="swiper-slide"><img src="img/box-trilogia-verao.jpg" 
-                    alt="Triologia Verão"></div>
-                <div class="swiper-slide"><img src="img/capa de Anne de Green Gables_adobe_express.svg" 
-                    alt="Anne de Green Gables"></div>
-                <div class="swiper-slide"><img src="img/capa de A Seleção.jpg" 
-                    alt="A Seleção"></div>
-                <div class="swiper-slide"><img src="img/Capa de Orgulho e Preconceito_adobe_express.svg" 
-                    alt="Orgulho e Preconceito"></div>
-                <div class="swiper-slide"><img src="img/capa de Os sete maridos de Evelin Hugo_adobe_express.svg" 
-                    alt="Os Sete Maridos de Evelyn Hugo"></div>
-                <div class="swiper-slide"><img src="img/capa de como eu era antes de você.jpg" 
-                    alt="livro Como eu era antes de você"></div>
-                <div class="swiper-slide"><img src="img/capa de a culpa é das estrelas.jpg" 
-                    alt="livro A culpa é das estrelas"></div>
-            </div>
-            
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <div class="card">
-                <!--1ª linha-->
-                <div class="card__descrição">
-                    <!--1ª coluna-->
-                    <div class="descrição">
-                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
-                        <h2 class="descrição__titulo-livro">Carletto's Filmes</h2>
-                        <p clas="descrição__texto">Onde você encontrará diversos filmes de sua preferência, pois oferecemos 
-                            filmes de comédia, romance, ação, aventura, terror, suspense, triller, entre outros.</p>
-                    </div>
-                <!--2ª coluna-->
-                <img class="Carletto__filmes" src="img/Carletto_s filmes.png" class="descrição__imagem">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/capa de A vida invisível de Addie Larue_adobe_express.svg" 
+                        alt="A Vida Invisível de Addie Larue"></div>
+                    <div class="swiper-slide"><img src="img/box-trilogia-verao.jpg" 
+                        alt="Triologia Verão"></div>
+                    <div class="swiper-slide"><img src="img/capa de Anne de Green Gables_adobe_express.svg" 
+                        alt="Anne de Green Gables"></div>
+                    <div class="swiper-slide"><img src="img/capa de A Seleção.jpg" 
+                        alt="A Seleção"></div>
+                    <div class="swiper-slide"><img src="img/Capa de Orgulho e Preconceito_adobe_express.svg" 
+                        alt="Orgulho e Preconceito"></div>
+                    <div class="swiper-slide"><img src="img/capa de Os sete maridos de Evelin Hugo_adobe_express.svg" 
+                        alt="Os Sete Maridos de Evelyn Hugo"></div>
+                    <div class="swiper-slide"><img src="img/capa de como eu era antes de você.jpg" 
+                        alt="livro Como eu era antes de você"></div>
+                    <div class="swiper-slide"><img src="img/capa de a culpa é das estrelas.jpg" 
+                        alt="livro A culpa é das estrelas"></div>
                 </div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
 
-            <!--2ª linha-->
-            <div class="card__botões">
-                <!--1ª coluna-->
-                <ul class="botões">
-                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
-                </ul>
-                <!--2ª coluna-->
-                <a href="#" class="botões__ancora">Saiba mais</a>
+            <div class="card">
+                    <!--1ª linha-->
+                    <div class="card__descrição">
+                        <!--1ª coluna-->
+                        <div class="descrição">
+                            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descrição__titulo-livro">Carletto's Filmes</h2>
+                            <p clas="descrição__texto">Onde você encontrará diversos filmes de sua preferência, pois oferecemos 
+                                filmes de comédia, romance, ação, aventura, terror, suspense, triller, entre outros.</p>
+                        </div>
+                    <!--2ª coluna-->
+                    <img class="Carletto__filmes" src="img/Carletto's filmes.png" class="descrição__imagem">
+                    </div>
+
+                <!--2ª linha-->
+                <div class="card__botões">
+                    <!--1ª coluna-->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!--2ª coluna-->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
             </div>
         </div>
     </section>
@@ -171,61 +164,63 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">Adicionados na estante recentemente</h2>
         <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+        <div class="carroseel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="img/capa de a cinco passos de você.jpg"
-                        alt="Livro A Cinco Passos de Você"></div>
-                <div class="swiper-slide"><img src="img/capa de amor e gelato.jpg"
-                        alt="Livro Amor e Gelato"></div>
-                <div class="swiper-slide"><img src="img/capa de como sobreviver a realeza.jpg"
-                        alt="Livro Como sobreviver a realeza"></div>
-                <div class="swiper-slide"><img src="img/capa de um de nós está mentindo.jpg" 
-                    alt="Livro Um de Nós está Mentindo"></div>
-                <div class="swiper-slide"><img src="img/capa de mil beijos de garoto.jpg" 
-                    alt="Livro Mil beijos de garoto"></div>
-                <div class="swiper-slide"><img src="img/capa de rainha vermelha.jpg" 
-                    alt="livro Rainha Vermelha"></div>
-                <div class="swiper-slide"><img src="img/capa de nossa história dava um livro.jpg" 
-                    alt="livro Nossa história dava um livro"></div>
-                <div class="swiper-slide"><img src="img/capa de a menina que roubava livros.jpg" 
-                    alt="livro A Menina que Roubava Livros"></div>
-            </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <div class="card">
-            <!-- 1º linha -->
-            <div class="card__descrição">
-                <!-- 1º coluna -->
-                <div class="descrição">
-                    <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
-                    <h3 class="descrição__titulo">Autora do Mês</h3>
-                    <h2 class="descrição__titulo-livro">Colleen Hoover</h2>
-                    <p class="descrição__texto">Escritora norte-americana que escreve principalmente romances nos 
-                        gêneros romântico e ficção para jovens adultos.
-                    </p>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/capa de a cinco passos de você.jpg"
+                            alt="Livro A Cinco Passos de Você"></div>
+                    <div class="swiper-slide"><img src="img/capa de amor e gelato.jpg"
+                            alt="Livro Amor e Gelato"></div>
+                    <div class="swiper-slide"><img src="img/capa de como sobreviver a realeza.jpg"
+                            alt="Livro Como sobreviver a realeza"></div>
+                    <div class="swiper-slide"><img src="img/capa de um de nós está mentindo.jpg" 
+                        alt="Livro Um de Nós está Mentindo"></div>
+                    <div class="swiper-slide"><img src="img/capa de mil beijos de garoto.jpg" 
+                        alt="Livro Mil beijos de garoto"></div>
+                    <div class="swiper-slide"><img src="img/capa de rainha vermelha.jpg" 
+                        alt="livro Rainha Vermelha"></div>
+                    <div class="swiper-slide"><img src="img/capa de nossa história dava um livro.jpg" 
+                        alt="livro Nossa história dava um livro"></div>
+                    <div class="swiper-slide"><img src="img/capa de a menina que roubava livros.jpg" 
+                        alt="livro A Menina que Roubava Livros"></div>
                 </div>
-                <!-- 2º coluna -->
-                <img class="Imagem__Colleen__Hoover" src="img/foto da Colleen Hoover.jpg" class="descrição__imagem">
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
 
-            <!-- 2º linha -->
-            <div class="card__botões">
-                <!-- 1º coluna -->
-                <ul class="botões">
-                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
-                </ul>
-                <!-- 2º coluna -->
-                <a href="#" class="botões__ancora">Saiba mais</a>
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Autora do Mês</h3>
+                        <h2 class="descrição__titulo-livro">Colleen Hoover</h2>
+                        <p class="descrição__texto">Escritora norte-americana que escreve principalmente romances nos 
+                            gêneros romântico e ficção para jovens adultos.
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img class="Imagem__Colleen__Hoover" src="img/foto da Colleen Hoover.jpg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
             </div>
         </div>
     </section>
